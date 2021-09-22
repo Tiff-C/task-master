@@ -32,3 +32,9 @@ pip3 freeze --local > requirements.txt
 ```
 echo web: python app.py > Procfile
 ```
+
+When deploying the app on Heroku I used the GitHub deployment method and put the key, value pairs from the `env.py` in settings > config vars e.g `IP` as the key and `0.0.0.0` as the value.
+
+Once this info had been input into Heroku and the `requirements.txt` file and the `Prockfile` have been pushed to GitHub, I then went to deploy > enable automatic deployments and then selected 'deploy branch'.
+
+This method of deployment allows the app to update whenever new code is pushed to the GitHub repository.
