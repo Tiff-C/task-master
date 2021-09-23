@@ -10,7 +10,7 @@ This is a Code Institute Mini Project, the purpose of this project is to put tog
 
 ### The `env.py` doc
 
-To create the flask app you need to set up the environment, as the setup contains sensitive info the env.py has been added to `.gitignore`. An example of the code can be seen below with the sensitive data removed.
+To create the flask app you need to set up the environment, as the setup contains sensitive info `env.py` has been added to `.gitignore`. An example of the code can be seen below with the sensitive data removed.
 
 ```
 import os
@@ -38,3 +38,11 @@ When deploying the app on Heroku I used the GitHub deployment method and put the
 Once this info had been input into Heroku and the `requirements.txt` file and the `Prockfile` have been pushed to GitHub, I then went to deploy > enable automatic deployments and then selected 'deploy branch'.
 
 This method of deployment allows the app to update whenever new code is pushed to the GitHub repository.
+
+### Connecting to MongoDB
+
+To get my `MONGO_URI` I:
+1. Went to my clusters overview page on MongoDB and clicked *connect* 
+2. Selected the *"connect to your application"* option
+3. Selected the python driver and version 3.6+
+4. Copied the generated link and pasted it into my `env.py` file and the Heroku config vars section.
